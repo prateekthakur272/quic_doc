@@ -14,5 +14,7 @@
         "description": "Hint text for doctor search bar"
     },
     "categories":"Categories",
-    "seeAll":"See all"
+    "seeAll":"See all",
+    "mySchedule":"My Schedule",
+    "noAppointments":"No appointments for today"
 }

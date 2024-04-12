@@ -6,4 +6,5 @@ extension BuildContextExtension on BuildContext {
   ThemeData get theme => Theme.of(this);
   ColorScheme get colorScheme => Theme.of(this).colorScheme;
   AppLocalizations get localizations => AppLocalizations.of(this)!;
+  Size get screenSize => MediaQuery.of(this).size;
 }
