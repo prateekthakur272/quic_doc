@@ -12,5 +12,7 @@
     "searchDoctor":"Search For Doctors",
     "@searchDoctor":{
         "description": "Hint text for doctor search bar"
-    }
+    },
+    "categories":"Categories",
+    "seeAll":"See all"
 }

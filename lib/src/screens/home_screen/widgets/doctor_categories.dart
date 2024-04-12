@@ -1,6 +1,7 @@
 import 'package:doctor_repository/doctor_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:quic_doc/src/extensions/build_context_extension.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/circle_avatar_with_label.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/section_title.dart';
 
@@ -12,8 +13,8 @@ class DoctorCategories extends StatelessWidget {
     return Column(
       children: [
         SectionTitle(
-          title: 'Categories',
-          action: 'See all',
+          title: context.localizations.categories,
+          action: context.localizations.seeAll,
           onActionPressed: () {},
         ),
         Row(

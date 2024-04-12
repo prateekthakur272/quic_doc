@@ -83,14 +83,9 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           )),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Container(
-          width: double.maxFinite,
-          height: double.maxFinite,
-          // color: context.colorScheme.primary.withAlpha(160),
-          child: const Column(children: [DoctorCategories()]),
-        ),
+      body: const SingleChildScrollView(
+        padding: EdgeInsets.all(16),
+        child: Column(children: [DoctorCategories()]),
       ),
     );
   }
