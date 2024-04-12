@@ -1,0 +1,8 @@
+{
+    "@@locale": "en",
+    "@@author": "Prateek Thakur",
+    "appTitle":"Quic Doc",
+    "@appTitle":{
+        "description": "App title"
+    }
+}
