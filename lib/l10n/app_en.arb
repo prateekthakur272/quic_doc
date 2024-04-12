@@ -4,5 +4,13 @@
     "appTitle":"Quic Doc",
     "@appTitle":{
         "description": "App title"
+    },
+    "welcome":"Welcome",
+    "@welcome":{
+        "description": "Welcome message"
+    },
+    "searchDoctor":"Search For Doctors",
+    "@searchDoctor":{
+        "description": "Hint text for doctor search bar"
     }
 }
