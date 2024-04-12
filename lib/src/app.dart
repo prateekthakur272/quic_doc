@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quic_doc/src/constants/theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:quic_doc/src/screens/home_screen.dart';
+import 'package:quic_doc/src/screens/home_screen/home_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

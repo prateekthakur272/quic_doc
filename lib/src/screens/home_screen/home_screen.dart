@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quic_doc/src/constants/widgets.dart';
 import 'package:quic_doc/src/extensions/build_context_extension.dart';
+import 'package:quic_doc/src/screens/home_screen/widgets/doctor_categories.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -82,6 +83,15 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           )),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Container(
+          width: double.maxFinite,
+          height: double.maxFinite,
+          // color: context.colorScheme.primary.withAlpha(160),
+          child: const Column(children: [DoctorCategories()]),
+        ),
+      ),
     );
   }
 }
