@@ -5,7 +5,6 @@ class DoctorRepository {
 
   Future<List<DoctorCategory>> fetchDoctorCategories() async {
     await Future.delayed(const Duration(milliseconds: 1000));
-    // TODO: get those data from the DB
     return DoctorCategory.values;
   }
 

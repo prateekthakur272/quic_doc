@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:models/models.dart';
 import 'package:quic_doc/src/blocs/home_bloc.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/doctor_list_tile.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/section_title.dart';
