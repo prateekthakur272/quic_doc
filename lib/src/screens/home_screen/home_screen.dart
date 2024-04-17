@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quic_doc/src/constants/widgets.dart';
 import 'package:quic_doc/src/extensions/build_context_extension.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/doctor_categories.dart';
+import 'package:quic_doc/src/screens/home_screen/widgets/main_nav_bar.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/my_appointments.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/nearby_doctors.dart';
 
@@ -95,6 +96,7 @@ class HomeScreen extends StatelessWidget {
           NearbyDoctors()
         ]),
       ),
+      bottomNavigationBar: const MainNavBar(),
     );
   }
 }
