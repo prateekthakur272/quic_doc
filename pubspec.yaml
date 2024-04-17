@@ -17,6 +17,8 @@ dependencies:
   font_awesome_flutter: ^10.7.0
   models:
     path: packages/models
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.5
 
 dev_dependencies:
   flutter_test:
