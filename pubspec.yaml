@@ -15,8 +15,8 @@ dependencies:
     sdk: flutter
   intl: ^0.18.1
   font_awesome_flutter: ^10.7.0
-  doctor_repository:
-    path: packages/doctor_repository
+  models:
+    path: packages/models
 
 dev_dependencies:
   flutter_test:

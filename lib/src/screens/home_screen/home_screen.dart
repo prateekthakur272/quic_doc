@@ -4,6 +4,7 @@ import 'package:quic_doc/src/constants/widgets.dart';
 import 'package:quic_doc/src/extensions/build_context_extension.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/doctor_categories.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/my_appointments.dart';
+import 'package:quic_doc/src/screens/home_screen/widgets/nearby_doctors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -86,8 +87,13 @@ class HomeScreen extends StatelessWidget {
           )),
       body: const SingleChildScrollView(
         padding: EdgeInsets.all(16),
-        child:
-            Column(children: [DoctorCategories(), space16, MyAppointments()]),
+        child: Column(children: [
+          DoctorCategories(),
+          space16,
+          MyAppointments(),
+          space16,
+          NearbyDoctors()
+        ]),
       ),
     );
   }
