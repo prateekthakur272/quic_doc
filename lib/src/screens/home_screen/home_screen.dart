@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:quic_doc/src/blocs/home_bloc.dart';
 import 'package:quic_doc/src/constants/widgets.dart';
 import 'package:quic_doc/src/extensions/build_context_extension.dart';
 import 'package:quic_doc/src/screens/home_screen/widgets/doctor_categories.dart';
@@ -86,16 +88,28 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           )),
-      body: const SingleChildScrollView(
-        padding: EdgeInsets.all(16),
-        child: Column(children: [
-          DoctorCategories(),
-          space16,
-          MyAppointments(),
-          space16,
-          NearbyDoctors()
-        ]),
-      ),
+      body: BlocBuilder<HomeBloc, HomeState>(builder: (context, state) {
+        if (state.status == HomeStatus.loading ||
+            state.status == HomeStatus.initial) {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        } else if (state.status == HomeStatus.error) {
+          return const Center(
+            child: Text('Failed to load data'),
+          );
+        }
+        return const SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: Column(children: [
+            DoctorCategories(),
+            space16,
+            MyAppointments(),
+            space16,
+            NearbyDoctors()
+          ]),
+        );
+      }),
       bottomNavigationBar: const MainNavBar(),
     );
   }
