@@ -13,6 +13,7 @@ final themeLight = ThemeData(
         onBackground: Colors.black,
         surface: Colors.white,
         onSurface: Colors.black),
+    dividerTheme: DividerThemeData(color: Colors.grey.shade400, thickness: .5),
     inputDecorationTheme:
         const InputDecorationTheme(border: OutlineInputBorder()));
 
